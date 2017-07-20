@@ -22,7 +22,11 @@ const { propertyDidChange, propertyWillChange } = Ember;
  */
 export default function forceSet(obj, keyName, value) {
   propertyWillChange(obj, keyName);
-  defineProperty(obj, keyName, value);
+  if (value && value.isDescriptor) {
+    defineProperty(obj, keyName, value);
+  } else {
+    defineProperty(obj, keyName, null, value);
+  }
   propertyDidChange(obj, keyName);
   return value;
 }

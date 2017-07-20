@@ -23,4 +23,8 @@ test('it works', function(assert) {
 
   forceSet(obj, 'computed', readOnly('quux'));
   assert.equal(get(obj, 'quux'), get(obj, 'computed'), 'runtime computed property was correctly overwritten using `forceSet`');
+
+  const NOT_A_DESCRIPTOR = 'not a descriptor';
+  forceSet(obj, 'computed', NOT_A_DESCRIPTOR);
+  assert.equal(NOT_A_DESCRIPTOR, get(obj, 'computed'), 'runtime computed property was correctly overwritten to a non-descriptor using `forceSet`');
 });
