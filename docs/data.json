@@ -3,7 +3,7 @@
         "name": "cell-type-multi-value",
         "description": "Pass an array of values to your cell",
         "url": "https://github.com/buschtoens/ember-light-table-cell-type-multi-value",
-        "version": "0.0.0.ab98f998"
+        "version": "v0.0.1"
     },
     "files": {
         "addon/components/light-table/cells/multi-value.js": {
