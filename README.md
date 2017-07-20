@@ -1,5 +1,7 @@
 # ember-light-table-cell-type-multi-value
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/buschtoens/ember-light-table-cell-type-multi-value.svg)](https://greenkeeper.io/)
+
 ![Ember Version](https://embadge.io/v1/badge.svg?start=2.4.0)
 [![Build Status](https://travis-ci.org/buschtoens/ember-light-table-cell-type-multi-value.svg)](https://travis-ci.org/buschtoens/ember-light-table-cell-type-multi-value)
 [![npm version](https://badge.fury.io/js/ember-light-table-cell-type-multi-value.svg)](http://badge.fury.io/js/ember-light-table-cell-type-multi-value)
