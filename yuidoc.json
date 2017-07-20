@@ -1,0 +1,25 @@
+{
+  "name": "cell-type-multi-value",
+  "description": "Pass an array of values to your cell",
+  "url": "https://github.com/buschtoens/ember-light-table-cell-type-multi-value",
+  "options": {
+    "enabledEnvironments": ["production"],
+    "paths": [
+      "addon"
+    ],
+    "external": {
+      "data": [{
+        "base": "http://emberjs.com/api/",
+        "json": "http://builds.emberjs.com/tags/v2.14.1/ember-docs.json"
+      }]
+    },
+    "themedir": "node_modules/yuidoc-ember-theme",
+    "helpers": ["node_modules/yuidoc-ember-theme/helpers/helpers.js"],
+    "exclude": "vendor",
+    "outdir": "docs",
+    "linkNatives": true,
+    "quiet": true,
+    "parseOnly": false,
+    "lint": false
+  }
+}
