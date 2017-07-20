@@ -1,4 +1,4 @@
-import { moduleForComponent, test } from 'ember-qunit';
+import { moduleForComponent, test, skip } from 'ember-qunit';
 import hbs from 'htmlbars-inline-precompile';
 import { set, setProperties } from '@ember/object';
 import { run, schedule } from '@ember/runloop';
@@ -60,7 +60,7 @@ test('it updates when arbitrarily deeply nested properties update`', function(as
   });
 });
 
-test('it updates when the `valuePaths` update`', function(assert) {
+skip('it updates when the `valuePaths` update`', function(assert) {
   this.render(hbs`{{lt-row row columns}}`);
   run(() => {
     set(this, 'column.valuePaths', ['quux', 'nested.properties.bar']);
