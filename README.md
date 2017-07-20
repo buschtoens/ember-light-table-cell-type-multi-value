@@ -1,26 +1,26 @@
 # ember-light-table-cell-type-multi-value
 
-This README outlines the details of collaborating on this Ember addon.
+![Ember Version](https://embadge.io/v1/badge.svg?start=2.4.0)
+[![Build Status](https://travis-ci.org/buschtoens/ember-light-table-cell-type-multi-value.svg)](https://travis-ci.org/buschtoens/ember-light-table-cell-type-multi-value)
+[![npm version](https://badge.fury.io/js/ember-light-table-cell-type-multi-value.svg)](http://badge.fury.io/js/ember-light-table-cell-type-multi-value)
+[![Download Total](https://img.shields.io/npm/dt/ember-light-table-cell-type-multi-value.svg)](http://badge.fury.io/js/ember-light-table-cell-type-multi-value)
+[![Ember Observer Score](https://emberobserver.com/badges/ember-light-table-cell-type-multi-value.svg)](https://emberobserver.com/addons/ember-light-table-cell-type-multi-value)
+
+> Pass an array of values to your cell  
+
+This is an addon for [**ember-light-table**][elt]. It adds the
+[cell type][cellType] `multi-value`, which enables you to specify an array of `valuePaths` instead of a single [`valuePath`][valuePath].
+
+[elt]: https://github.com/offirgolan/ember-light-table
+[cellType]: https://offirgolan.github.io/ember-light-table/docs/classes/Column.html#property_cellType
+[valuePath]: https://offirgolan.github.io/ember-light-table/docs/classes/Column.html#property_valuePath
 
 ## Installation
 
-* `git clone <repository-url>` this repository
-* `cd ember-light-table-cell-type-multi-value`
-* `npm install`
+```
+ember install ember-light-table-cell-type-multi-value
+```
 
-## Running
+## Usage
 
-* `ember serve`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
-
-## Running Tests
-
-* `npm test` (Runs `ember try:each` to test your addon against multiple Ember versions)
-* `ember test`
-* `ember test --server`
-
-## Building
-
-* `ember build`
-
-For more information on using ember-cli, visit [https://ember-cli.com/](https://ember-cli.com/).
+TBD
