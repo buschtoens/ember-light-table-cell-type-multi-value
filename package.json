@@ -21,6 +21,7 @@
     "test": "ember try:each"
   },
   "dependencies": {
+    "babel-plugin-transform-class-properties": "^6.24.1",
     "ember-cli-babel": "^6.3.0",
     "ember-light-table": "^1.9.0"
   },
