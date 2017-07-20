@@ -5,6 +5,9 @@
 [![npm version](https://badge.fury.io/js/ember-light-table-cell-type-multi-value.svg)](http://badge.fury.io/js/ember-light-table-cell-type-multi-value)
 [![Download Total](https://img.shields.io/npm/dt/ember-light-table-cell-type-multi-value.svg)](http://badge.fury.io/js/ember-light-table-cell-type-multi-value)
 [![Ember Observer Score](https://emberobserver.com/badges/ember-light-table-cell-type-multi-value.svg)](https://emberobserver.com/addons/ember-light-table-cell-type-multi-value)
+[![Greenkeeper badge](https://badges.greenkeeper.io/buschtoens/ember-light-table-cell-type-multi-value.svg)](https://greenkeeper.io/)
+[![dependencies Status](https://david-dm.org/buschtoens/ember-light-table-cell-type-multi-value/status.svg)](https://david-dm.org/buschtoens/ember-light-table-cell-type-multi-value)
+[![devDependencies Status](https://david-dm.org/buschtoens/ember-light-table-cell-type-multi-value/dev-status.svg)](https://david-dm.org/buschtoens/ember-light-table-cell-type-multi-value?type=dev)
 
 > Pass an array of values to your cell  
 
