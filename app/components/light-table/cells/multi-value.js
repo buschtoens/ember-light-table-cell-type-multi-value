@@ -1,0 +1,1 @@
+export { default } from 'ember-light-table-cell-type-multi-value/components/light-table/cells/multi-value';
