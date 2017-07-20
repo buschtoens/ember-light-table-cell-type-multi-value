@@ -23,4 +23,18 @@ ember install ember-light-table-cell-type-multi-value
 
 ## Usage
 
-TBD
+In your column definition, just replace `valuePath` with `valuePaths`, which can
+now be an array of paths. The `value` property passed to your cell will now be
+an array of values. Simple as that! :wink:
+
+For maximized backwards compatibility, `valuePaths` may also be a string. In
+that case, you'll get a single `value`, not an array. If no `valuePaths` were
+specified, `multi-value` falls back to the default behavior of the `base` cell
+and attempts to read `valuePath`.
+
+*However*, `valuePath` *must* be a `String`. This means no fancy multiple
+values in that case. This limitation and the need to use `valuePaths` instead of
+`valuePath` in the first place, stem from the fact that ember-light-table uses
+the `{{get}}` helper like so: [`{{get row valuePath}}`](https://github.com/offirgolan/ember-light-table/blob/71b76d2e5c5e737dd8072787d1484155db2883f7/addon/templates/components/lt-row.hbs#L4)
+
+We might change that in the future.
