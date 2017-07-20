@@ -1,0 +1,103 @@
+{
+    "project": {
+        "name": "cell-type-multi-value",
+        "description": "Pass an array of values to your cell",
+        "url": "https://github.com/buschtoens/ember-light-table-cell-type-multi-value",
+        "version": "0.0.0.ab98f998"
+    },
+    "files": {
+        "addon/components/light-table/cells/multi-value.js": {
+            "name": "addon/components/light-table/cells/multi-value.js",
+            "modules": {},
+            "classes": {
+                "MultiValueCell": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "addon/utils/force-set.js": {
+            "name": "addon/utils/force-set.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        }
+    },
+    "modules": {},
+    "classes": {
+        "MultiValueCell": {
+            "name": "MultiValueCell",
+            "shortname": "MultiValueCell",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "addon/components/light-table/cells/multi-value.js",
+            "line": 8,
+            "extends": "LightTable.BaseCell"
+        }
+    },
+    "elements": {},
+    "classitems": [
+        {
+            "file": "addon/components/light-table/cells/multi-value.js",
+            "line": 13,
+            "itemtype": "property",
+            "name": "collectedValues;",
+            "type": "{Ember.ComputedProperty}",
+            "access": "private",
+            "tagname": ";",
+            "class": "MultiValueCell"
+        },
+        {
+            "file": "addon/components/light-table/cells/multi-value.js",
+            "line": 20,
+            "itemtype": "property",
+            "name": "value",
+            "type": "{Object|Object[]}",
+            "class": "MultiValueCell"
+        },
+        {
+            "file": "addon/components/light-table/cells/multi-value.js",
+            "line": 36,
+            "itemtype": "method",
+            "name": "didReceiveAttrs",
+            "access": "private",
+            "tagname": "",
+            "class": "MultiValueCell"
+        },
+        {
+            "file": "addon/utils/force-set.js",
+            "line": 6,
+            "description": "Behaves just like[`Ember.set(obj, keyName, value)`](https://www.emberjs.com/api/ember/2.14/namespaces/Ember/methods/set?anchor=set),\nhowever it is also capable of overwriting / replacing read-only computed\nproperties.\n\nThis is required to update computed properties at run time.\n\nFor more information, see [this Twiddle](https://ember-twiddle.com/2d505ae4881ff5703611586fc5e57543)\nor [this Slack conversation](https://embercommunity.slackarchive.io/general/page-100/ts-1500544052814073).",
+            "itemtype": "method",
+            "name": "forceSet",
+            "params": [
+                {
+                    "name": "obj",
+                    "description": "The object to modify.",
+                    "type": "Ember.Object"
+                },
+                {
+                    "name": "keyName",
+                    "description": "The property key to set.",
+                    "type": "String"
+                },
+                {
+                    "name": "value",
+                    "description": "The value to set.",
+                    "type": "Object"
+                }
+            ],
+            "return": {
+                "description": "The passed value.",
+                "type": "Object"
+            },
+            "access": "private",
+            "tagname": "",
+            "class": ""
+        }
+    ],
+    "warnings": []
+}
