@@ -1,9 +1,6 @@
 Changelog
 =========
 
-## 0.0.0
+## v0.0.1
 
-- Hold Your Horses,
-- Pack Your Parachutes,
-- We're Coming,
-- But we haven't released anything yet.
+There we go.

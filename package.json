@@ -1,6 +1,6 @@
 {
   "name": "ember-light-table-cell-type-multi-value",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Pass an array of values to your cell",
   "keywords": [
     "ember-addon",
