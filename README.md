@@ -38,3 +38,69 @@ values in that case. This limitation and the need to use `valuePaths` instead of
 the `{{get}}` helper like so: [`{{get row valuePath}}`](https://github.com/offirgolan/ember-light-table/blob/71b76d2e5c5e737dd8072787d1484155db2883f7/addon/templates/components/lt-row.hbs#L4)
 
 We might change that in the future.
+
+### Example
+
+```js
+function format(value) {
+  return JSON.stringify(value);
+}
+
+export default Component.extends({
+  columns: computed(function() {
+    return [{
+      label: 'First Name',
+      valuePath: 'firstName', // fallback to `valuePath`
+      cellType: 'multi-value',
+      format
+    }, {
+      label: 'Last Name',
+      valuePaths: 'lastName', // singular string is also accepted
+      cellType: 'multi-value',
+      format
+    }, {
+      label: 'Favorite colors',
+      valuePaths: ['firstColor', 'secondColor', 'thirdColor']
+      cellType: 'multi-value',
+      format
+    }, {
+      label: 'Youngest Siblings',
+      valuePaths: ['siblings.youngestSister', 'siblings.youngestBrother']
+      cellType: 'multi-value',
+      format
+    }];
+  }),
+
+  rows: computed(function() {
+    return [{
+      firstName: 'Jan',
+      lastName:  'Buschtöns',
+
+      firstColor:  'pink',
+      secondColor: 'green',
+      thirdColor:  'blue',
+
+      siblings: {
+        youngestBrother: 'Robin'
+      }
+    }];
+  }),
+
+  init() {
+    this._super(...arguments);
+
+    const columns = get(this, 'columns');
+    const rows = get(this, 'rows');
+    set(this, 'table', new Table(columns, rows));
+  }
+});
+```
+
+```html
+<tr>
+  <td>"Jan"</td>
+  <td>"Buschtöns"</td>
+  <td>["pink", "green", "blue"]</td>
+  <td>[null, "Robin"]</td>
+</tr>
+```
