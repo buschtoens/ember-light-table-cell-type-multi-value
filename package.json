@@ -22,7 +22,7 @@
   },
   "dependencies": {
     "ember-cli-babel": "^6.3.0",
-    "ember-decorators": "^1.2.1",
+    "ember-decorators": "^4.0.2",
     "ember-light-table": "^1.9.0"
   },
   "devDependencies": {
